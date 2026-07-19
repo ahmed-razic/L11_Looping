@@ -19,7 +19,7 @@
 
             int playersNumber = -1;
 
-            while(playersNumber < 0 || playersNumber >10)
+            while (playersNumber < 0 || playersNumber > 10)
             {
                 Console.WriteLine("Please enter a number between 0 and 10");
                 playersNumber = Convert.ToInt32(Console.ReadLine());
@@ -35,6 +35,15 @@
                 playersAge = Convert.ToInt32(Console.ReadLine());
                 Console.WriteLine("You entered: " + playersAge);
             } while (playersAge < 0 || playersAge > 10);
+
+
+            for (int y = 0; y < 10; y++)
+            {
+                if(y%2 == 0)
+                    continue;
+                Console.WriteLine("y is " + y);
+
+            }
         }
     }
 }
