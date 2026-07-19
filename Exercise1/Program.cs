@@ -42,6 +42,8 @@
                 if(y%2 == 0)
                     continue;
                 Console.WriteLine("y is " + y);
+                if (y == 7)
+                    break;
 
             }
         }
