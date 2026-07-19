@@ -25,6 +25,16 @@
                 playersNumber = Convert.ToInt32(Console.ReadLine());
                 Console.WriteLine("You entered: " + playersNumber);
             }
+
+
+            int playersAge;
+
+            do
+            {
+                Console.WriteLine("Please enter a number between 0 and 10");
+                playersAge = Convert.ToInt32(Console.ReadLine());
+                Console.WriteLine("You entered: " + playersAge);
+            } while (playersAge < 0 || playersAge > 10);
         }
     }
 }
